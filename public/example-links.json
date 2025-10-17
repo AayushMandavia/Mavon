@@ -1,0 +1,62 @@
+{
+  "info": "This file provides a mapping of example project slugs to their live URLs. Replace placeholder values with actual project URLs.",
+  "lastUpdated": "2025-01-01",
+  "examples": {
+    "software": {
+      "webApps": {
+        "smartschool": "REPLACE_WITH_URL_SMARTSCHOOL",
+        "pos": "REPLACE_WITH_URL_POS"
+      },
+      "mobileApps": {
+        "food": "REPLACE_WITH_URL_FOOD",
+        "event": "REPLACE_WITH_URL_EVENT"
+      },
+      "chatbots": {
+        "support": "REPLACE_WITH_URL_SUPPORT_BOT",
+        "leadgen": "REPLACE_WITH_URL_LEADGEN_BOT"
+      },
+      "dbms": {
+        "inventory": "REPLACE_WITH_URL_INVENTORY",
+        "student": "REPLACE_WITH_URL_STUDENT"
+      },
+      "automation": {
+        "invoice": "REPLACE_WITH_URL_INVOICE",
+        "email": "REPLACE_WITH_URL_EMAIL"
+      },
+      "saas": {
+        "analytics": "REPLACE_WITH_URL_ANALYTICS",
+        "sales": "REPLACE_WITH_URL_SALES"
+      }
+    },
+    "digital": {
+      "festivalPosts": {
+        "diwali": "REPLACE_WITH_URL_DIWALI",
+        "newyear": "REPLACE_WITH_URL_NEWYEAR"
+      },
+      "businessPosts": {
+        "offer": "REPLACE_WITH_URL_OFFER",
+        "product": "REPLACE_WITH_URL_PRODUCT"
+      }
+    },
+    "branding": {
+      "logos": {
+        "logo3d": "REPLACE_WITH_URL_LOGO3D",
+        "mascot": "REPLACE_WITH_URL_MASCOT"
+      },
+      "brochures": {
+        "brochure": "REPLACE_WITH_URL_BROCHURE",
+        "catalog": "REPLACE_WITH_URL_CATALOG"
+      }
+    },
+    "marketing": {
+      "socialMedia": {
+        "instagram": "REPLACE_WITH_URL_INSTAGRAM",
+        "calendar": "REPLACE_WITH_URL_CALENDAR"
+      },
+      "emailCampaigns": {
+        "welcome": "REPLACE_WITH_URL_WELCOME",
+        "newsletter": "REPLACE_WITH_URL_NEWSLETTER"
+      }
+    }
+  }
+}
