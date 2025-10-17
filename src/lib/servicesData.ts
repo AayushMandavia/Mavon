@@ -29,13 +29,13 @@ export const servicesData = {
           title: 'Smart School ERP',
           description: 'Complete school management with attendance, fees & assignments tracking.',
           image: smartschoolErp,
-          demoUrl: 'REPLACE_WITH_URL_SMARTSCHOOL', // Developer: Paste actual URL here
+          demoUrl: 'https://estimated-pink-gexrdmzfyd.edgeone.app/', // Developer: Paste actual URL here
         },
         {
           title: 'Retail POS System',
           description: 'Point of sale system with inventory and real-time billing.',
           image: retailPos,
-          demoUrl: 'REPLACE_WITH_URL_POS',
+          demoUrl: 'https://strange-plum-fwsaqii4am.edgeone.app/',
         },
       ],
     },
@@ -46,13 +46,13 @@ export const servicesData = {
           title: 'Food Delivery App',
           description: 'Complete food ordering platform with live tracking and payments.',
           image: foodDelivery,
-          demoUrl: 'REPLACE_WITH_URL_FOOD',
+          demoUrl: 'https://yelling-silver-gmekct689c.edgeone.app/',
         },
         {
           title: 'Event Booking App',
           description: 'Book tickets, manage events, and send reminders seamlessly.',
           image: eventBooking,
-          demoUrl: 'REPLACE_WITH_URL_EVENT',
+          demoUrl: 'https://accepted-azure-9feephvjmo.edgeone.app/',
         },
       ],
     },
@@ -63,7 +63,7 @@ export const servicesData = {
           title: 'Customer Support Bot',
           description: '24/7 automated support with natural language understanding.',
           image: supportChatbot,
-          demoUrl: 'REPLACE_WITH_URL_SUPPORT_BOT',
+          demoUrl: 'https://gross-harlequin-b2hvbovbgo.edgeone.app/',
         },
         {
           title: 'Lead Generation Bot',
@@ -114,7 +114,7 @@ export const servicesData = {
           title: 'Marketing Analytics',
           description: 'Track campaigns, ROI, and customer engagement in one dashboard.',
           image: marketingAnalytics,
-          demoUrl: 'REPLACE_WITH_URL_ANALYTICS',
+          demoUrl: 'https://inquisitive-magenta-yrloczsfej.edgeone.app/',
         },
         {
           title: 'Sales Performance Tracker',
