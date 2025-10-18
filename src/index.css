@@ -8,48 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-/* Forest Theme - Mavon Design System (Balanced Version) */
+    /* 🌲 Forest Theme - Mavon Design System (Balanced + More Image Visibility) */
 
-/* Base Colors */
---background: 120 35% 12%;      /* lighter background — less overpowering */
---foreground: 127 45% 96%;      /* softer off-white text */
+    /* Base Colors */
+    --background: 120 30% 10%;         /* darker base to make bright image pop more // changed */
+    --foreground: 127 50% 97%;         /* slightly brighter text // changed */
 
-/* Forest Palette */
---forest-deep: 120 35% 18%;     /* slightly lighter — helps background visibility */
---forest-canopy: 120 30% 24%;   /* softer green tone for mid-layers */
---leaf-green: 127 45% 52%;      /* natural green, not neon */
---leaf-light: 127 45% 65%;      /* light and gentle highlight */
---earth-brown: 20 20% 32%;      /* toned for balance with greens */
---mist: 0 0% 98%;               /* neutral white mist effect */
+    /* Forest Palette */
+    --forest-deep: 120 35% 15%;        /* reduced darkness // changed */
+    --forest-canopy: 120 30% 22%;
+    --leaf-green: 127 45% 52%;
+    --leaf-light: 127 50% 68%;         /* more highlight for accents // changed */
+    --earth-brown: 20 25% 28%;
+    --mist: 0 0% 98%;
 
-    
     /* Service Category Colors */
-    --service-software: 134 39% 46%;        /* #43A047 Forest Green */
-    --service-software-glow: 145 100% 82%;  /* #A5FECB Neon Mint */
-    --service-software-accent: 175 100% 18%; /* #00695C Emerald */
+    --service-software: 134 39% 46%;
+    --service-software-glow: 145 100% 82%;
+    --service-software-accent: 175 100% 18%;
     
-    --service-digital: 207 80% 51%;         /* #1E88E5 Sky Blue */
-    --service-digital-glow: 199 100% 75%;   /* #81D4FA Electric Cyan */
-    --service-digital-accent: 214 100% 33%; /* #0D47A1 Indigo */
+    --service-digital: 207 80% 51%;
+    --service-digital-glow: 199 100% 75%;
+    --service-digital-accent: 214 100% 33%;
     
-    --service-branding: 291 64% 42%;        /* #9C27B0 Royal Purple */
-    --service-branding-glow: 291 47% 79%;   /* #D1C4E9 Lavender Glow */
-    --service-branding-accent: 291 89% 22%; /* #4A148C Deep Violet */
+    --service-branding: 291 64% 42%;
+    --service-branding-glow: 291 47% 79%;
+    --service-branding-accent: 291 89% 22%;
     
-    --service-marketing: 30 100% 49%;       /* #FB8C00 Amber Orange */
-    --service-marketing-glow: 36 100% 75%;  /* #FFD180 Warm Gold */
-    --service-marketing-accent: 22 100% 45%; /* #E65100 Deep Brown */
-    
-    /* Legacy Accent Palette (kept for compatibility) */
-    --teal: 178 85% 38%;
-    --teal-glow: 178 85% 55%;
-    --amber: 45 100% 70%;
-    --amber-glow: 45 100% 80%;
-    --violet: 256 92% 76%;
-    --violet-glow: 256 92% 85%;
-    --sky: 201 100% 74%;
-    --sky-glow: 201 100% 82%;
-    
+    --service-marketing: 30 100% 49%;
+    --service-marketing-glow: 36 100% 75%;
+    --service-marketing-accent: 22 100% 45%;
+
     /* Semantic Colors */
     --card: 120 45% 15%;
     --card-foreground: 127 53% 95%;
@@ -60,14 +49,14 @@ All colors MUST be HSL.
     
     --primary: 127 53% 51%;
     --primary-foreground: 120 70% 8%;
-    --primary-glow: 127 53% 65%;
+    --primary-glow: 127 53% 68%;       /* stronger glow for contrast // changed */
     
     --secondary: 178 85% 38%;
     --secondary-foreground: 0 0% 100%;
     --secondary-glow: 178 85% 55%;
     
     --muted: 120 30% 25%;
-    --muted-foreground: 127 20% 70%;
+    --muted-foreground: 127 25% 75%;   /* slightly lighter muted text // changed */
     
     --accent: 45 100% 70%;
     --accent-foreground: 120 70% 13%;
@@ -79,31 +68,25 @@ All colors MUST be HSL.
     --input: 120 30% 20%;
     --ring: 127 53% 51%;
     
-    /* Gradients */
-    --gradient-forest: linear-gradient(180deg, hsl(120, 70%, 8%) 0%, hsl(120, 45%, 18%) 100%);
+    /* Gradients (made overlays lighter to reveal more image) */
+    --gradient-forest: linear-gradient(180deg, hsl(120, 70%, 8% / 0.7) 0%, hsl(120, 45%, 18% / 0.5) 100%); /* changed */
     --gradient-leaf: linear-gradient(135deg, hsl(127, 53%, 51%) 0%, hsl(178, 85%, 38%) 100%);
-    --gradient-glow: radial-gradient(circle, hsl(127, 53%, 51% / 0.2) 0%, transparent 70%);
+    --gradient-glow: radial-gradient(circle, hsl(127, 53%, 51% / 0.15) 0%, transparent 70%); /* more transparent */
     --gradient-holographic: linear-gradient(135deg, hsl(127, 53%, 51%) 0%, hsl(178, 85%, 38%) 25%, hsl(256, 92%, 76%) 50%, hsl(201, 100%, 74%) 75%, hsl(45, 100%, 70%) 100%);
     
-    /* Service Category Gradients */
-    --gradient-software: linear-gradient(135deg, hsl(var(--service-software)), hsl(var(--service-software-glow)));
-    --gradient-digital: linear-gradient(135deg, hsl(var(--service-digital)), hsl(var(--service-digital-glow)));
-    --gradient-branding: linear-gradient(135deg, hsl(var(--service-branding)), hsl(var(--service-branding-glow)));
-    --gradient-marketing: linear-gradient(135deg, hsl(var(--service-marketing)), hsl(var(--service-marketing-glow)));
-    
     /* Section Background */
-    --gradient-services-bg: linear-gradient(160deg, hsl(127, 45%, 95%) 0%, hsl(145, 55%, 92%) 100%);
+    --gradient-services-bg: linear-gradient(160deg, hsl(127, 45%, 96%) 0%, hsl(145, 55%, 92%) 100%);
     
     /* Glass Effect */
-    --glass-bg: hsl(120, 45%, 15% / 0.6);
-    --glass-border: hsl(127, 53%, 51% / 0.3);
-    --glass-glow: hsl(127, 53%, 51% / 0.15);
+    --glass-bg: hsl(120, 45%, 15% / 0.45);  /* lighter opacity to let image show through // changed */
+    --glass-border: hsl(127, 53%, 51% / 0.25);
+    --glass-glow: hsl(127, 53%, 51% / 0.12);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(120, 70%, 13% / 0.4);
-    --shadow-glow: 0 0 40px hsl(127, 53%, 51% / 0.3);
-    --shadow-glow-strong: 0 0 60px hsl(127, 53%, 51% / 0.5);
-    --shadow-card: 0 8px 32px hsl(120, 70%, 8% / 0.6);
+    --shadow-soft: 0 4px 20px hsl(120, 70%, 13% / 0.35);
+    --shadow-glow: 0 0 40px hsl(127, 53%, 51% / 0.25);
+    --shadow-glow-strong: 0 0 60px hsl(127, 53%, 51% / 0.4);
+    --shadow-card: 0 8px 32px hsl(120, 70%, 8% / 0.5);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,40 +105,34 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
-  /* Custom Scrollbar */
+
   ::-webkit-scrollbar {
     width: 10px;
   }
-  
   ::-webkit-scrollbar-track {
     background: hsl(var(--forest-deep));
   }
-  
   ::-webkit-scrollbar-thumb {
     background: hsl(var(--leaf-green));
     border-radius: 5px;
   }
-  
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--leaf-light));
   }
 }
 
 @layer components {
-  /* Glass Card */
   .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow-card);
   }
-  
-  /* Holographic Text */
+
   .text-holographic {
     background: var(--gradient-holographic);
     background-size: 200% 200%;
@@ -164,53 +141,42 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
     animation: holographic-shift 3s ease-in-out infinite;
   }
-  
-  /* Glow Effect */
+
   .glow {
     box-shadow: var(--shadow-glow);
   }
-  
+
   .glow-strong {
     box-shadow: var(--shadow-glow-strong);
   }
-  
-  /* Backward Tilt Hover */
+
   .hover-tilt {
     transition: var(--transition-smooth);
     transform-style: preserve-3d;
   }
-  
+
   .hover-tilt:hover {
     transform: perspective(1000px) rotateX(-4deg) translateY(-8px);
     box-shadow: var(--shadow-glow-strong);
   }
-  
-  /* Firefly Cursor */
+
   .cursor-firefly {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="%233AC34F" opacity="0.6"/><circle cx="12" cy="12" r="3" fill="%23FFD966"/></svg>') 12 12, auto;
   }
 }
 
 @layer utilities {
-  /* Animation utilities */
   .fade-out {
     animation: fade-out 1s ease-out forwards;
   }
-  
+
   @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+    from { opacity: 1; }
+    to { opacity: 0; }
   }
 
-  /* Reduce motion support */
   @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
