@@ -21,8 +21,8 @@ const FloatingMascot = () => {
         {/* Mascot */}
         <img
           src={mascotSpirit}
-          alt="Forest Spirit Mascot"
-          className="relative w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl"
+          alt="Mavon Logo"
+          className="relative w-24 h-24 md:w-32 md:h-32 rounded-full object-cover drop-shadow-2xl"
         />
 
         {/* Particle trail */}
