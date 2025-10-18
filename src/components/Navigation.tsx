@@ -1,6 +1,6 @@
 import { Home, Settings, Package, Briefcase, Mail } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import mavonLogo from '@/assets/Mavon Logo.jpg';
+import mavonLogo from '@/assets/mavon-logo.jpg';
 
 export const Navigation = () => {
   const location = useLocation();
