@@ -62,11 +62,15 @@ const Contact = ({ liteMode }: ContactProps) => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
                   <p className="text-muted-foreground">
-                    <a href="mailto:mavontechsolutions@gmail.com" className="hover:underline">
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=mavontechsolutions@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
                       mavontechsolutions@gmail.com
                     </a>
                   </p>
-
                 </div>
               </div>
             </div>
