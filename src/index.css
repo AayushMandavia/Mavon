@@ -8,19 +8,20 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Forest Theme - Mavon Design System */
-    
-    /* Base Colors */
-    --background: 120 70% 8%;
-    --foreground: 127 53% 95%;
-    
-    /* Forest Palette */
-    --forest-deep: 120 70% 13%;
-    --forest-canopy: 120 45% 18%;
-    --leaf-green: 127 53% 51%;
-    --leaf-light: 127 53% 65%;
-    --earth-brown: 20 29% 29%;
-    --mist: 0 0% 96%;
+/* Forest Theme - Mavon Design System (Balanced Version) */
+
+/* Base Colors */
+--background: 120 35% 12%;      /* lighter background — less overpowering */
+--foreground: 127 45% 96%;      /* softer off-white text */
+
+/* Forest Palette */
+--forest-deep: 120 35% 18%;     /* slightly lighter — helps background visibility */
+--forest-canopy: 120 30% 24%;   /* softer green tone for mid-layers */
+--leaf-green: 127 45% 52%;      /* natural green, not neon */
+--leaf-light: 127 45% 65%;      /* light and gentle highlight */
+--earth-brown: 20 20% 32%;      /* toned for balance with greens */
+--mist: 0 0% 98%;               /* neutral white mist effect */
+
     
     /* Service Category Colors */
     --service-software: 134 39% 46%;        /* #43A047 Forest Green */
