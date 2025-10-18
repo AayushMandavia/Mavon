@@ -132,9 +132,10 @@ export const servicesData = {
         {
           title: 'Diwali Greeting Post',
           description: 'Beautiful festival greeting with traditional design elements.',
-          image: festivalDiwali,
+          image: 'https://gay-gray-myomhktvhc.edgeone.app/WhatsApp%20Image%202025-10-18%20at%2016.00.53_c951b2cb.jpg',
           demoUrl: 'https://gay-gray-myomhktvhc.edgeone.app/WhatsApp%20Image%202025-10-18%20at%2016.00.53_c951b2cb.jpg',
         },
+
         {
           title: 'New Year Celebration',
           description: 'Modern new year greeting with animated elements.',
