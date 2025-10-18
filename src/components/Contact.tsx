@@ -72,8 +72,9 @@ const Contact = ({ liteMode }: ContactProps) => {
                   <MessageSquare className="text-violet" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">Chat with Us</h3>
-                  <p className="text-muted-foreground">Live support available</p>
+                  <h3 className="font-semibold text-foreground mb-1">Contact Us</h3>
+                  <p className="text-muted-foreground">+91 7678046520</p>
+                  <p className="text-muted-foreground">+91 7977457097</p>
                 </div>
               </div>
             </div>
