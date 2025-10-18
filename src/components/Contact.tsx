@@ -73,12 +73,12 @@ const Contact = ({ liteMode }: ContactProps) => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Contact Us</h3>
-                  <a href="tel:7678046520" className="text-muted-foreground hover:underline">
+                  <p><a href="tel:7678046520" className="text-muted-foreground hover:underline">
                     +917678046520
-                  </a>
-                  <a href="tel:7678046520" className="text-muted-foreground hover:underline">
+                  </a></p>
+                  <p><a href="tel:7678046520" className="text-muted-foreground hover:underline">
                     +917977457097
-                  </a>
+                  </a></p>
                 </div>
               </div>
             </div>
