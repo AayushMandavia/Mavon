@@ -5,7 +5,6 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Contact from '@/components/Contact';
 import FloatingMascot from '@/components/FloatingMascot';
-import FireflyCursor from '@/components/FireflyCursor';
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,10 +48,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden cursor-firefly">
-      {/* Firefly cursor effect */}
-      {!liteModeEnabled && <FireflyCursor />}
-
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
       {/* Floating Mascot */}
       {!liteModeEnabled && <FloatingMascot />}
 
