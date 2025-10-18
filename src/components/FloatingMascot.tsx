@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import mascotSpirit from '@/assets/mascot-spirit.png';
+import mascotSpirit from '@/assets/Mavon Logo.jpg';
 
 const FloatingMascot = () => {
   const [isVisible, setIsVisible] = useState(false);
