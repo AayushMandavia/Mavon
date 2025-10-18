@@ -61,7 +61,7 @@ const Contact = ({ liteMode }: ContactProps) => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">contact@mavon.dev</p>
+                  <p className="text-muted-foreground">mavontechsolutions@gmail.com</p>
                 </div>
               </div>
             </div>
