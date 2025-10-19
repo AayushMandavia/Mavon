@@ -13,8 +13,8 @@ const About = ({ liteMode }: AboutProps) => {
     },
     {
       icon: Users,
-      title: 'Our Team',
-      description: 'A passionate group of developers, designers, and strategists dedicated to bringing your vision to life.'
+      title: 'Innovative Solutions',
+      description: 'Driven by Technology & Vision.'
     },
     {
       icon: Leaf,
@@ -23,8 +23,8 @@ const About = ({ liteMode }: AboutProps) => {
     },
     {
       icon: Award,
-      title: 'Excellence',
-      description: 'Committed to delivering high-quality solutions with attention to detail and client satisfaction.'
+      title: 'Excellence Focused',
+      description: 'Building the Future'
     }
   ];
 
