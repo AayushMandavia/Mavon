@@ -29,7 +29,7 @@ const FloatingMascot = () => {
         {[...Array(3)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 bg-amber rounded-full animate-particle-rise"
+            className="absolute w-1.5 h-1.5 bg-amber rounded-full animate-particle-rise"
             style={{
               left: '50%',
               bottom: '20%',
