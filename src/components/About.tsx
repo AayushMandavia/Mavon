@@ -23,7 +23,7 @@ const About = ({ liteMode }: AboutProps) => {
     },
     {
       icon: Award,
-      title: 'Excellence',
+      title: 'Excellence Focused',
       description: 'Building the Future'
     }
   ];
