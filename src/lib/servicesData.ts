@@ -129,13 +129,12 @@ export const servicesData = {
     festivalPosts: {
       title: 'Festival Posts',
       examples: [
-        import festivalDiwali from './Diwali Post.jpg';
         {
           title: 'Diwali Greeting Post',
           description: 'Beautiful festival greeting with traditional design elements.',
           image: festivalDiwali,
           demoUrl: festivalDiwali,
-        }
+        },
         {
           title: 'New Year Celebration',
           description: 'Modern new year greeting with animated elements.',
