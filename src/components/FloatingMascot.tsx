@@ -13,28 +13,28 @@ const FloatingMascot = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-24 right-8 z-30 animate-float pointer-events-none">
+    <div className="fixed bottom-20 right-6 z-30 animate-float pointer-events-none">
       <div className="relative">
         {/* Glow effect */}
-        <div className="absolute inset-0 bg-leaf/30 rounded-full blur-xl animate-glow-pulse" />
-        
+        <div className="absolute inset-0 bg-leaf/40 rounded-full blur-md animate-glow-pulse" />
+
         {/* Mascot */}
         <img
           src={mascotSpirit}
           alt="Mavon Logo"
-          className="relative w-16 h-16 md:w-20 md:h-20 rounded-full object-cover drop-shadow-2xl"
+          className="relative w-10 h-10 md:w-12 md:h-12 rounded-full object-cover drop-shadow-lg"
         />
 
         {/* Particle trail */}
         {[...Array(3)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1.5 h-1.5 bg-amber rounded-full animate-particle-rise"
+            className="absolute w-1 h-1 bg-amber rounded-full animate-particle-rise"
             style={{
               left: '50%',
-              bottom: '20%',
+              bottom: '10%',
               animationDelay: `${i * 0.3}s`,
-              opacity: 0.6 - i * 0.2,
+              opacity: 0.5 - i * 0.15,
             }}
           />
         ))}
