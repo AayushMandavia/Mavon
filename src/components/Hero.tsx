@@ -91,7 +91,7 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             {[
               { value: 'Innovation', label: 'Driven by Technology & Vision' }, 
               { value: 'Excellence', label: 'Building the Future' },
-              { value: '99%', label: 'Success Rate' },
+              { value: 'Creativity', label: 'Transforming Ideas into Reality' },
             ].map((stat, index) => (
               <div key={index} className="glass-card rounded-xl p-6 hover-tilt">
                 <div className="text-3xl md:text-4xl font-bold text-holographic mb-2">{stat.value}</div>
