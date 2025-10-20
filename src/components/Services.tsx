@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Monitor, Smartphone, Database, Cog, Palette, PenTool, TrendingUp, ChevronDown } from 'lucide-react';
+import { Monitor, Smartphone, Database, Cog, Palette, PenTool, ChevronDown } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import { servicesData } from '@/lib/servicesData';
 
