@@ -17,16 +17,16 @@ const Services = ({ liteMode }: ServicesProps) => {
   const serviceCategories = [
     {
       id: 'software-web-retail',
-      title: 'Software Solutions – Web & Retail',
-      icon: Code,
+      title: 'Software– Web & Retail',
+      icon: Monitor,
       color: 'software' as ServiceColor,
       description: 'Enterprise-grade web applications and retail systems',
       subcategories: servicesData.softwareWebRetail,
     },
     {
       id: 'software-mobile-ai',
-      title: 'Software Solutions – Mobile & AI',
-      icon: Code,
+      title: 'Software– Mobile & AI',
+      icon: Smartphone,
       color: 'software' as ServiceColor,
       description: 'Smart mobile apps and intelligent chatbot solutions',
       subcategories: servicesData.softwareMobileAI,
@@ -34,7 +34,7 @@ const Services = ({ liteMode }: ServicesProps) => {
     {
       id: 'software-dbms',
       title: 'Database Management',
-      icon: Code,
+      icon: Database,
       color: 'software' as ServiceColor,
       description: 'Robust database systems for data management',
       subcategories: servicesData.softwareDBMS,
@@ -42,7 +42,7 @@ const Services = ({ liteMode }: ServicesProps) => {
     {
       id: 'software-automation',
       title: 'Automation Tools',
-      icon: Code,
+      icon: Cog,
       color: 'software' as ServiceColor,
       description: 'Streamline workflows with intelligent automation',
       subcategories: servicesData.softwareAutomation,
@@ -63,14 +63,14 @@ const Services = ({ liteMode }: ServicesProps) => {
       description: 'Brand identity that stands out',
       subcategories: servicesData.branding,
     },
-    {
-      id: 'marketing',
-      title: 'Marketing Automation',
-      icon: TrendingUp,
-      color: 'marketing' as ServiceColor,
-      description: 'Automated campaigns that convert',
-      subcategories: servicesData.marketing,
-    },
+    // {
+    //   id: 'marketing',
+    //   title: 'Marketing Automation',
+    //   icon: TrendingUp,
+    //   color: 'marketing' as ServiceColor,
+    //   description: 'Automated campaigns that convert',
+    //   subcategories: servicesData.marketing,
+    // },
   ];
 
   // Ambient glow loop - random card pulses every 6 seconds
