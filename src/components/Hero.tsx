@@ -103,11 +103,11 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-leaf flex items-start justify-center p-2">
           <div className="w-1.5 h-1.5 bg-leaf rounded-full animate-pulse" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
