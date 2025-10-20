@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import Solutions from '@/components/Solutions';
+import About from '@/components/About';
 import Contact from '@/components/Contact';
 import FloatingMascot from '@/components/FloatingMascot';
 import FireflyCursor from '@/components/FireflyCursor';
@@ -36,6 +38,16 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-20">
         <Services liteMode={liteModeEnabled} />
+      </section>
+
+      {/* Solutions Section */}
+      <section id="solutions" className="py-20">
+        <Solutions liteMode={liteModeEnabled} />
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20">
+        <About liteMode={liteModeEnabled} />
       </section>
 
       {/* Contact Section */}
