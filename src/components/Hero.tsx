@@ -89,8 +89,8 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
             {[
-              { value: '100+', label: 'Projects Delivered' },
-              { value: '50+', label: 'Happy Clients' },
+              { value: 'Innovative Solutions', label: 'Driven by Technology & Vision' }, 
+              { value: 'Excellence Focused', label: 'Building the Future' },
               { value: '99%', label: 'Success Rate' },
             ].map((stat, index) => (
               <div key={index} className="glass-card rounded-xl p-6 hover-tilt">
