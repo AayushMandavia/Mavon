@@ -1,17 +1,27 @@
 import { Home, Settings, Package, Briefcase, Mail } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import mavonLogo from '@/assets/mavon-logo.jpg';
 
 export const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { icon: Home, label: "Home", path: "/" },
+    { icon: Home, label: "Home", path: "#home" },
     { icon: Settings, label: "Services", path: "#services" },
     { icon: Package, label: "Solutions", path: "#solutions" },
     { icon: Briefcase, label: "About", path: "#about" },
     { icon: Mail, label: "Contact", path: "#contact" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    e.preventDefault();
+    const sectionId = path.replace('#', '');
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', path);
+    }
+  };
 
   return (
     <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full backdrop-blur-xl bg-card/30 border border-primary/20 shadow-glow">
@@ -26,13 +36,14 @@ export const Navigation = () => {
         </li>
         {navItems.map((item) => {
           const Icon = item.icon;
-          const isActive = location.pathname === item.path || location.hash === item.path;
+          const isActive = location.hash === item.path || (!location.hash && item.path === '#home');
           
           return (
             <li key={item.path}>
-              <Link
-                to={item.path}
-                className={`group flex items-center gap-2 transition-all duration-300 ${
+              <a
+                href={item.path}
+                onClick={(e) => handleNavClick(e, item.path)}
+                className={`group flex items-center gap-2 transition-all duration-300 cursor-pointer ${
                   isActive 
                     ? "text-primary" 
                     : "text-foreground/70 hover:text-primary"
@@ -46,7 +57,7 @@ export const Navigation = () => {
                 <span className="text-sm font-medium group-hover:translate-x-1 transition-transform">
                   {item.label}
                 </span>
-              </Link>
+              </a>
             </li>
           );
         })}
