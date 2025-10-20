@@ -36,7 +36,8 @@ export const Navigation = () => {
         </li>
         {navItems.map((item) => {
           const Icon = item.icon;
-          const isActive = location.hash === item.path || (!location.hash && item.path === '#home');
+          const currentHash = location.hash || '#home';
+          const isActive = currentHash === item.path;
           
           return (
             <li key={item.path}>
