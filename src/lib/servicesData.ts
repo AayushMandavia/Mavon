@@ -21,7 +21,7 @@ import instagramAd from '@/assets/examples/instagram-ad.jpg';
 import emailNewsletter from '@/assets/examples/email-newsletter.jpg';
 
 export const servicesData = {
-  software: {
+  softwareWebRetail: {
     webApps: {
       title: 'Web Applications',
       examples: [
@@ -29,7 +29,7 @@ export const servicesData = {
           title: 'Smart School ERP',
           description: 'Complete school management with attendance, fees & assignments tracking.',
           image: smartschoolErp,
-          demoUrl: 'https://estimated-pink-gexrdmzfyd.edgeone.app/', // Developer: Paste actual URL here
+          demoUrl: 'https://estimated-pink-gexrdmzfyd.edgeone.app/',
         },
         {
           title: 'Retail POS System',
@@ -39,6 +39,8 @@ export const servicesData = {
         },
       ],
     },
+  },
+  softwareMobileAI: {
     mobileApps: {
       title: 'Mobile Applications',
       examples: [
@@ -73,6 +75,8 @@ export const servicesData = {
         },
       ],
     },
+  },
+  softwareDBMS: {
     dbms: {
       title: 'Database Management',
       examples: [
@@ -90,6 +94,8 @@ export const servicesData = {
         },
       ],
     },
+  },
+  softwareAutomation: {
     automation: {
       title: 'Automation Tools',
       examples: [
@@ -104,23 +110,6 @@ export const servicesData = {
           description: 'Schedule and automate email campaigns efficiently.',
           image: emailScheduler,
           demoUrl: 'https://proposed-fuchsia-92j2abyo6t.edgeone.app/',
-        },
-      ],
-    },
-    saas: {
-      title: 'SaaS Platforms',
-      examples: [
-        {
-          title: 'Marketing Analytics',
-          description: 'Track campaigns, ROI, and customer engagement in one dashboard.',
-          image: marketingAnalytics,
-          demoUrl: 'https://inquisitive-magenta-yrloczsfej.edgeone.app/',
-        },
-        {
-          title: 'Sales Performance Tracker',
-          description: 'Monitor team performance, deals, and revenue metrics.',
-          image: salesTracker,
-          demoUrl: 'https://realistic-sapphire-p82urzy984.edgeone.app/',
         },
       ],
     },

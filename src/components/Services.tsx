@@ -16,12 +16,36 @@ const Services = ({ liteMode }: ServicesProps) => {
 
   const serviceCategories = [
     {
-      id: 'software',
-      title: 'Software Solutions',
+      id: 'software-web-retail',
+      title: 'Software Solutions – Web & Retail',
       icon: Code,
       color: 'software' as ServiceColor,
-      description: 'Custom software that scales with your needs',
-      subcategories: servicesData.software,
+      description: 'Enterprise-grade web applications and retail systems',
+      subcategories: servicesData.softwareWebRetail,
+    },
+    {
+      id: 'software-mobile-ai',
+      title: 'Software Solutions – Mobile & AI',
+      icon: Code,
+      color: 'software' as ServiceColor,
+      description: 'Smart mobile apps and intelligent chatbot solutions',
+      subcategories: servicesData.softwareMobileAI,
+    },
+    {
+      id: 'software-dbms',
+      title: 'Database Management',
+      icon: Code,
+      color: 'software' as ServiceColor,
+      description: 'Robust database systems for data management',
+      subcategories: servicesData.softwareDBMS,
+    },
+    {
+      id: 'software-automation',
+      title: 'Automation Tools',
+      icon: Code,
+      color: 'software' as ServiceColor,
+      description: 'Streamline workflows with intelligent automation',
+      subcategories: servicesData.softwareAutomation,
     },
     {
       id: 'digital',
