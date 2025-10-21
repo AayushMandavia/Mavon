@@ -27,7 +27,7 @@ const Services = ({ liteMode }: ServicesProps) => {
       id: 'software-mobile-ai',
       title: 'Software– Mobile & AI',
       icon: Smartphone,
-      color: 'software' as ServiceColor,
+      color: 'marketing' as ServiceColor,
       description: 'Smart mobile apps and intelligent chatbot solutions',
       subcategories: servicesData.softwareMobileAI,
     },
@@ -63,14 +63,14 @@ const Services = ({ liteMode }: ServicesProps) => {
       description: 'Brand identity that stands out',
       subcategories: servicesData.branding,
     },
-    // {
-    //   id: 'marketing',
-    //   title: 'Marketing Automation',
-    //   icon: TrendingUp,
-    //   color: 'marketing' as ServiceColor,
-    //   description: 'Automated campaigns that convert',
-    //   subcategories: servicesData.marketing,
-    // },
+    {
+      id: 'marketing',
+      title: 'Marketing Automation',
+      icon: TrendingUp,
+      color: 'marketing' as ServiceColor,
+      description: 'Automated campaigns that convert',
+      subcategories: servicesData.marketing,
+    },
   ];
 
   // Ambient glow loop - random card pulses every 6 seconds
@@ -125,14 +125,14 @@ const Services = ({ liteMode }: ServicesProps) => {
         gradient: 'from-service-branding to-service-branding-glow',
         hover: 'hover:border-service-branding hover:shadow-[0_0_20px_hsl(var(--service-branding)/0.3)]',
       },
-      marketing: {
-        bg: 'bg-service-marketing/20',
-        border: 'border-service-marketing/30',
-        text: 'text-service-marketing',
-        glow: 'text-service-marketing-glow',
-        gradient: 'from-service-marketing to-service-marketing-glow',
-        hover: 'hover:border-service-marketing hover:shadow-[0_0_20px_hsl(var(--service-marketing)/0.3)]',
-      },
+      // marketing: {
+      //   bg: 'bg-service-marketing/20',
+      //   border: 'border-service-marketing/30',
+      //   text: 'text-service-marketing',
+      //   glow: 'text-service-marketing-glow',
+      //   gradient: 'from-service-marketing to-service-marketing-glow',
+      //   hover: 'hover:border-service-marketing hover:shadow-[0_0_20px_hsl(var(--service-marketing)/0.3)]',
+      // },
     };
     return colorMap[color];
   };
