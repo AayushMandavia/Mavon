@@ -190,9 +190,9 @@ const Services = ({ liteMode }: ServicesProps) => {
           <h2 className="text-4xl md:text-5xl font-bold text-holographic mb-4">
             Our Services
           </h2>
-          {/* <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          {<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {/* Comprehensive solutions powered by innovation and sustainability */}
-          </p> */}
+          </p> }
         </div>
 
         {/* Service Cards Grid */}
