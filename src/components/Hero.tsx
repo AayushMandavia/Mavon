@@ -66,7 +66,7 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
-            Futuristic software solutions that grow with nature.
+            Futuristic software solutions
           </p>
 
           {/* CTA Buttons */}
@@ -98,9 +98,9 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             style={{ animationDelay: '0.3s' }}
           >
             {[
-              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation   ' },
-              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence  ' },
-              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity  ' },
+              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation     ' },
+              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence    ' },
+              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity    ' },
             ].map((stat, index) => (
               <div
                 key={index}
