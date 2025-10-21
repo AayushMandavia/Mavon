@@ -98,9 +98,9 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             style={{ animationDelay: '0.3s' }}
           >
             {[
-              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation' },
-              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence' },
-              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity' },
+              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation   ' },
+              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence  ' },
+              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity  ' },
             ].map((stat, index) => (
               <div
                 key={index}
