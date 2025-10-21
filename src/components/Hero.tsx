@@ -53,7 +53,7 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-scale-in">
             <Sparkles className="text-leaf" size={16} />
-            <span className="text-sm text-leaf-light font-medium">Sustainable Technology Solutions</span>
+            <span className="text-sm text-leaf-light font-medium">Technology Solutions</span>
           </div>
 
           {/* Main Heading */}
