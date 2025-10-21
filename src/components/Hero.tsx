@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroForest}
@@ -20,7 +20,7 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/80 via-forest-deep/60 to-background" />
 
-        {/* Animated Mist Effect */}
+        {/* Mist effect */}
         {!liteMode && (
           <>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-leaf/10 to-transparent animate-shimmer" />
@@ -98,16 +98,16 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             style={{ animationDelay: '0.3s' }}
           >
             {[
-              { icon: <Lightbulb size={60} />, label: 'Innovation' },
-              { icon: <Star size={60} />, label: 'Excellence' },
-              { icon: <Sparkles size={60} />, label: 'Creativity' },
+              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation' },
+              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence' },
+              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity' },
             ].map((stat, index) => (
               <div
                 key={index}
                 className="glass-card rounded-xl p-6 hover-tilt transition transform hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,255,0.4)]"
               >
-                {/* Icon with gradient + hover glow */}
-                <div className="flex justify-center mb-2 bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-clip-text text-transparent hover:text-transparent transition-all duration-300">
+                {/* Icon */}
+                <div className="flex justify-center mb-2 transition-all duration-300">
                   {stat.icon}
                 </div>
 
