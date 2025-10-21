@@ -66,7 +66,7 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
-            Futuristic software solutions that grow with nature. Build the future while preserving tomorrow.
+            Futuristic software solutions that grow with nature.
           </p>
 
           {/* CTA Buttons */}
@@ -179,7 +179,7 @@ export default Hero;
 //           {/* Badge */}
 //           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-scale-in">
 //             <Sparkles className="text-leaf" size={16} />
-//             <span className="text-sm text-leaf-light font-medium">Sustainable Technology Solutions</span>
+//             <span className="text-sm text-leaf-light font-medium">Technology Solutions</span>
 //           </div>
 
 //           {/* Main Heading */}
@@ -192,7 +192,7 @@ export default Hero;
 //             className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in"
 //             style={{ animationDelay: '0.1s' }}
 //           >
-//             Futuristic software solutions that grow with nature. Build the future while preserving tomorrow.
+//             Futuristic software solutions that grow with nature.
 //           </p>
 
 //           {/* CTA Buttons */}
