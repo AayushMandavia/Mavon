@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, Lightbulb, Star, } from 'lucide-react';
 import heroForest from '@/assets/hero-forest.jpg';
 
 interface HeroProps {
@@ -89,12 +89,18 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
             {[
-              { value: 'Innovation', label: '' }, //Driven by Technology & Vision
-              { value: 'Excellence', label: '' }, //Building the Future'
-              { value: 'Creativity', label: '' }, //Transforming Ideas into Reality'
-            ].map((stat, index) => (
+              { icon: <Lightbulb size={60} />, label: 'Driven by Technology & Vision' },
+              { icon: <Star size={60} />, label: 'Building the Future' },
+              { icon: <Sparkles size={60} />, label: 'Transforming Ideas into Reality' },
+              ].map((stat, index) => (
+
+              // { value: 'Innovation', label: '' }, //Driven by Technology & Vision
+              // { value: 'Excellence', label: '' }, //Building the Future'
+              // { value: 'Creativity', label: '' }, //Transforming Ideas into Reality'
+            // ].map((stat, index) => (
               <div key={index} className="glass-card rounded-xl p-6 hover-tilt">
-                <div className="text-2xl md:text-3xl font-bold text-holographic mb-2">{stat.value}</div>
+                <div className="flex justify-center text-holographic mb-2">{stat.icon}</div>
+                {/* <div className="text-2xl md:text-3xl font-bold text-holographic mb-2">{stat.value}</div> */}
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
