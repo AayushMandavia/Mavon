@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Monitor, Smartphone, Database, Cog, Palette, PenTool, ChevronDown } from 'lucide-react';
+import { Monitor, Smartphone, Database, Cog, Palette, PenTool, ChevronDown, TrendingUp } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import { servicesData } from '@/lib/servicesData';
 
@@ -125,14 +125,14 @@ const Services = ({ liteMode }: ServicesProps) => {
         gradient: 'from-service-branding to-service-branding-glow',
         hover: 'hover:border-service-branding hover:shadow-[0_0_20px_hsl(var(--service-branding)/0.3)]',
       },
-      // marketing: {
-      //   bg: 'bg-service-marketing/20',
-      //   border: 'border-service-marketing/30',
-      //   text: 'text-service-marketing',
-      //   glow: 'text-service-marketing-glow',
-      //   gradient: 'from-service-marketing to-service-marketing-glow',
-      //   hover: 'hover:border-service-marketing hover:shadow-[0_0_20px_hsl(var(--service-marketing)/0.3)]',
-      // },
+      marketing: {
+        bg: 'bg-service-marketing/20',
+        border: 'border-service-marketing/30',
+        text: 'text-service-marketing',
+        glow: 'text-service-marketing-glow',
+        gradient: 'from-service-marketing to-service-marketing-glow',
+        hover: 'hover:border-service-marketing hover:shadow-[0_0_20px_hsl(var(--service-marketing)/0.3)]',
+      },
     };
     return colorMap[color];
   };
