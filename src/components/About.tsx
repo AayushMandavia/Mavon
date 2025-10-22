@@ -9,22 +9,30 @@ const About = ({ liteMode }: AboutProps) => {
     {
       icon: Target,
       title: 'Our Mission',
+      color: 'text-amber-500',
+      bgColor: 'bg-amber-500/20',
       description: 'To deliver innovative technology solutions that empower businesses while maintaining environmental responsibility.'
     },
     {
       icon: Users,
       title: 'Innovative Solutions',
+      color: 'text-sky-500',
+      bgColor: 'bg-sky-500/20',
       description: 'Driven by Technology & Vision.'
     },
     {
       icon: Leaf,
       title: 'Sustainability',
+      color: 'text-emerald-500',
+      bgColor: 'bg-emerald-500/20',
       description: 'Building eco-conscious solutions that grow with nature and contribute to a sustainable future.'
     },
     {
       icon: Award,
       title: 'Excellence Focused',
-      description: 'Building the Future'
+      color: 'text-violet-500',
+      bgColor: 'bg-violet-500/20',
+      description: 'Building the Future'
     }
   ];
 
@@ -62,8 +70,8 @@ const About = ({ liteMode }: AboutProps) => {
               className="glass-card p-6 rounded-xl hover:glow-medium transition-all duration-300 group"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors flex-shrink-0">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className={`p-3 rounded-lg ${value.bgColor} group-hover:scale-110 transition-all flex-shrink-0`}>
+                  <Icon className={`w-6 h-6 ${value.color}`} />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">

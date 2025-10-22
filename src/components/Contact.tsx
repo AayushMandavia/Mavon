@@ -23,8 +23,8 @@ const Contact = ({ liteMode }: ContactProps) => {
           <div className="animate-fade-in">
             <div className="glass-card rounded-xl p-6 hover-tilt">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-teal/20 flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-teal" size={24} />
+                <div className="w-12 h-12 rounded-lg bg-sky-500/20 flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-sky-500" size={24} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
@@ -47,8 +47,8 @@ const Contact = ({ liteMode }: ContactProps) => {
           <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <div className="glass-card rounded-xl p-6 hover-tilt">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-violet/20 flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="text-violet" size={24} />
+                <div className="w-12 h-12 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="text-emerald-500" size={24} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Contact Us</h3>
@@ -67,8 +67,8 @@ const Contact = ({ liteMode }: ContactProps) => {
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card rounded-xl p-6 hover-tilt">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-pink-500/20 flex items-center justify-center flex-shrink-0">
-                  <Instagram className="text-pink-500" size={24} />
+                <div className="w-12 h-12 rounded-lg bg-pink-600/20 flex items-center justify-center flex-shrink-0">
+                  <Instagram className="text-pink-600" size={24} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Follow Us</h3>

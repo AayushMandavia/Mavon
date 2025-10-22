@@ -9,24 +9,32 @@ const Solutions = ({ liteMode }: SolutionsProps) => {
     {
       icon: Package,
       title: 'Enterprise Solutions',
+      color: 'text-amber-500',
+      bgColor: 'bg-amber-500/20',
       description: '', //Scalable systems designed for growing businesses
       features: ['Custom ERP Systems', 'Business Intelligence', 'Process Automation']
     },
     {
       icon: Zap,
       title: 'Rapid Development',
+      color: 'text-cyan-500',
+      bgColor: 'bg-cyan-500/20',
       description: '', //Fast-track your digital transformation
       features: ['MVP Development', 'Prototype Design', 'Quick Deployment']
     },
     {
       icon: Shield,
       title: 'Secure Infrastructure',
+      color: 'text-emerald-500',
+      bgColor: 'bg-emerald-500/20',
       description: '', //Enterprise-grade security for your applications
       features: ['Data Encryption', 'Compliance Management', 'Security Audits']
     },
     {
       icon: TrendingUp,
       title: 'Growth Solutions',
+      color: 'text-violet-500',
+      bgColor: 'bg-violet-500/20',
       description: '', //Tools to scale your business effectively
       features: ['Analytics Dashboard', 'Performance Monitoring', 'Growth Strategy']
     }
@@ -52,8 +60,8 @@ const Solutions = ({ liteMode }: SolutionsProps) => {
               className="glass-card p-8 rounded-2xl hover:glow-medium transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className={`p-3 rounded-xl ${solution.bgColor} group-hover:scale-110 transition-all`}>
+                  <Icon className={`w-6 h-6 ${solution.color}`} />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-foreground mb-2">
