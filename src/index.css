@@ -175,11 +175,88 @@ All colors MUST be HSL.
     to { opacity: 0; }
   }
 
+  /* Rotating Icon Animations */
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes rotate-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+
+  @keyframes rotate-tilt {
+    0%, 100% { transform: rotate(0deg) rotateY(0deg); }
+    25% { transform: rotate(90deg) rotateY(10deg); }
+    50% { transform: rotate(180deg) rotateY(0deg); }
+    75% { transform: rotate(270deg) rotateY(-10deg); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      transform: scale(1);
+      filter: drop-shadow(0 0 8px currentColor);
+    }
+    50% { 
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 16px currentColor);
+    }
+  }
+
+  @keyframes float-rotate {
+    0%, 100% { 
+      transform: translateY(0) rotate(0deg);
+    }
+    50% { 
+      transform: translateY(-10px) rotate(180deg);
+    }
+  }
+
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
+
+  .animate-rotate-reverse {
+    animation: rotate-reverse 15s linear infinite;
+  }
+
+  .animate-rotate-tilt {
+    animation: rotate-tilt 12s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-float-rotate {
+    animation: float-rotate 8s ease-in-out infinite;
+  }
+
+  /* Scroll-triggered animation class */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+    }
+    
+    .animate-rotate-slow,
+    .animate-rotate-reverse,
+    .animate-rotate-tilt,
+    .animate-float-rotate {
+      animation: none !important;
     }
   }
 }

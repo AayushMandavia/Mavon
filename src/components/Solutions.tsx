@@ -1,10 +1,14 @@
+import { useEffect } from 'react';
 import { Package, Zap, Shield, TrendingUp } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface SolutionsProps {
   liteMode: boolean;
 }
 
 const Solutions = ({ liteMode }: SolutionsProps) => {
+  useScrollAnimation();
+  
   const solutions = [
     {
       icon: Package,
@@ -51,20 +55,31 @@ const Solutions = ({ liteMode }: SolutionsProps) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {solutions.map((solution, index) => {
           const Icon = solution.icon;
+          const rotationClass = index % 2 === 0 ? 'animate-rotate-slow' : 'animate-rotate-reverse';
+          
           return (
             <div
               key={index}
-              className="glass-card p-8 rounded-2xl hover:glow-medium transition-all duration-300 group"
+              className="glass-card p-8 rounded-2xl hover:glow-medium transition-all duration-300 group scroll-animate"
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className={`p-3 rounded-xl ${solution.bgColor} group-hover:scale-110 transition-all`}>
-                  <Icon className={`w-6 h-6 ${solution.color}`} />
+              <div className="flex items-start gap-6 mb-6">
+                {/* Rotating Icon Container */}
+                <div className={`p-4 rounded-xl ${solution.bgColor} group-hover:scale-110 transition-all relative flex-shrink-0`}>
+                  {/* Background glow ring */}
+                  {!liteMode && (
+                    <div className={`absolute inset-0 ${solution.bgColor} blur-lg opacity-0 group-hover:opacity-100 transition-opacity`} />
+                  )}
+                  {/* Rotating Icon */}
+                  <div className={`relative ${!liteMode ? rotationClass : ''}`}>
+                    <Icon className={`w-8 h-8 ${solution.color}`} strokeWidth={2} />
+                  </div>
                 </div>
+                
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                  <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {solution.title}
                   </h3>
                   <p className="text-muted-foreground">
@@ -72,11 +87,12 @@ const Solutions = ({ liteMode }: SolutionsProps) => {
                   </p>
                 </div>
               </div>
-              <ul className="space-y-2 mt-6">
+              
+              <ul className="space-y-3 mt-6">
                 {solution.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-foreground/80">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {feature}
+                  <li key={idx} className="flex items-center gap-3 text-foreground/80 group/item hover:text-foreground transition-colors">
+                    <div className={`w-2 h-2 rounded-full ${solution.color.replace('text-', 'bg-')} group-hover/item:scale-125 transition-transform`} />
+                    <span className="text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
