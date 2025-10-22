@@ -9,25 +9,25 @@ const Solutions = ({ liteMode }: SolutionsProps) => {
     {
       icon: Package,
       title: 'Enterprise Solutions',
-      description: 'Scalable systems designed for growing businesses',
+      description: '', //Scalable systems designed for growing businesses
       features: ['Custom ERP Systems', 'Business Intelligence', 'Process Automation']
     },
     {
       icon: Zap,
       title: 'Rapid Development',
-      description: 'Fast-track your digital transformation',
+      description: '', //Fast-track your digital transformation
       features: ['MVP Development', 'Prototype Design', 'Quick Deployment']
     },
     {
       icon: Shield,
       title: 'Secure Infrastructure',
-      description: 'Enterprise-grade security for your applications',
+      description: '', //Enterprise-grade security for your applications
       features: ['Data Encryption', 'Compliance Management', 'Security Audits']
     },
     {
       icon: TrendingUp,
       title: 'Growth Solutions',
-      description: 'Tools to scale your business effectively',
+      description: '', //Tools to scale your business effectively
       features: ['Analytics Dashboard', 'Performance Monitoring', 'Growth Strategy']
     }
   ];
