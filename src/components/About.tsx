@@ -1,13 +1,10 @@
 import { Target, Users, Leaf, Award } from 'lucide-react';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface AboutProps {
   liteMode: boolean;
 }
 
 const About = ({ liteMode }: AboutProps) => {
-  useScrollAnimation();
-  
   const values = [
     {
       icon: Target,
@@ -67,36 +64,20 @@ const About = ({ liteMode }: AboutProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {values.map((value, index) => {
           const Icon = value.icon;
-          const rotationClass = [
-            'animate-pulse-glow',
-            'animate-rotate-tilt', 
-            'animate-float-rotate',
-            'animate-rotate-reverse'
-          ][index % 4];
-          
           return (
             <div
               key={index}
-              className="glass-card p-7 rounded-xl hover:glow-medium transition-all duration-300 group scroll-animate"
+              className="glass-card p-6 rounded-xl hover:glow-medium transition-all duration-300 group"
             >
-              <div className="flex items-start gap-5">
-                {/* Rotating Icon Container */}
-                <div className={`p-4 rounded-xl ${value.bgColor} group-hover:scale-110 transition-all flex-shrink-0 relative`}>
-                  {/* Glow effect */}
-                  {!liteMode && (
-                    <div className={`absolute inset-0 ${value.bgColor} blur-md opacity-0 group-hover:opacity-100 transition-opacity`} />
-                  )}
-                  {/* Rotating Icon */}
-                  <div className={`relative ${!liteMode ? rotationClass : ''}`}>
-                    <Icon className={`w-7 h-7 ${value.color}`} strokeWidth={2} />
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className={`p-3 rounded-lg ${value.bgColor} group-hover:scale-110 transition-all flex-shrink-0`}>
+                  <Icon className={`w-6 h-6 ${value.color}`} />
                 </div>
-                
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">
                     {value.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground">
                     {value.description}
                   </p>
                 </div>

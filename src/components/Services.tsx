@@ -224,17 +224,10 @@ const Services = ({ liteMode }: ServicesProps) => {
                   {/* Glow effect */}
                   <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 ${colors.bg} blur-xl`} />
                   
-                  {/* Icon Container with Rotation */}
+                  {/* Icon Container */}
                   <div className="relative flex items-start justify-between mb-4">
-                    <div className={`w-20 h-20 rounded-xl ${colors.bg} flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-transform duration-400`}>
-                      {/* Background glow */}
-                      {!liteMode && isHovered && (
-                        <div className={`absolute inset-0 ${colors.bg} blur-md animate-pulse`} />
-                      )}
-                      {/* Rotating Icon */}
-                      <div className={`relative z-10 ${!liteMode && isHovered ? 'animate-rotate-slow' : ''}`}>
-                        <Icon className={colors.text} size={36} strokeWidth={2} />
-                      </div>
+                    <div className={`w-16 h-16 rounded-xl ${colors.bg} flex items-center justify-center ${!liteMode ? 'group-hover:animate-icon-morph' : ''}`}>
+                      <Icon className={colors.text} size={32} strokeWidth={2} />
                     </div>
                     <ChevronDown
                       className={`${colors.text} transition-transform duration-300 ${

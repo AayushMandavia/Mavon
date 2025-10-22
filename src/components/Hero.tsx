@@ -92,40 +92,29 @@ const Hero = ({ onScrollToServices, liteMode }: HeroProps) => {
             </Button>
           </div>
 
-          {/* Stats / Icons with Rotation */}
+          {/* Stats / Icons */}
           <div
-            className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto animate-fade-in"
+            className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto animate-fade-in"
             style={{ animationDelay: '0.3s' }}
           >
             {[
-              { icon: Lightbulb, label: 'Innovation', animation: 'animate-rotate-slow' },
-              { icon: Star, label: 'Excellence', animation: 'animate-pulse-glow' },
-              { icon: Sparkles, label: 'Creativity', animation: 'animate-rotate-reverse' },
-            ].map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <div
-                  key={index}
-                  className="glass-card rounded-xl p-6 hover-tilt transition transform hover:scale-110 hover:shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
-                >
-                  {/* Rotating Icon */}
-                  <div className="flex justify-center mb-3 relative">
-                    <div className={`${!liteMode ? stat.animation : ''}`}>
-                      <IconComponent size={64} className="text-holographic" strokeWidth={1.5} />
-                    </div>
-                    {/* Glow ring */}
-                    {!liteMode && (
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 rounded-full bg-primary/10 animate-ping" style={{ animationDuration: '3s' }} />
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Label */}
-                  <div className="text-base font-semibold text-foreground text-center">{stat.label}</div>
+              { icon: <Lightbulb size={60} className="text-holographic" />, label: 'Innovation     ' },
+              { icon: <Star size={60} className="text-holographic" />, label: 'Excellence    ' },
+              { icon: <Sparkles size={60} className="text-holographic" />, label: 'Creativity    ' },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="glass-card rounded-xl p-6 hover-tilt transition transform hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,255,0.4)]"
+              >
+                {/* Icon */}
+                <div className="flex justify-center mb-2 transition-all duration-300">
+                  {stat.icon}
                 </div>
-              );
-            })}
+
+                {/* Label */}
+                <div className="text-sm text-muted-foreground text-center">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
